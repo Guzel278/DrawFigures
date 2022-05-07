@@ -6,11 +6,11 @@ namespace DrawFigures
     {          
         static void Main(string[] args)
         {
-            CDraw circle = new CDraw();
-            HDraw home = new HDraw();
-            Artist<COutput> artist = new Artist<COutput>(home, 10);
+            CircleDraw circle = new CircleDraw();
+            HomeDraw home = new HomeDraw();
+            Artist<ConsoleOutput> artist = new Artist<ConsoleOutput>(home, 10);
             artist.Draw();
-            Artist<FOutput> artist2 = new Artist<FOutput>(circle, 10);
+            Artist<FileOutput> artist2 = new Artist<FileOutput>(circle, 10);
             artist2.Draw();
             //for (int i = 0; i <= 10; i++)
             //{

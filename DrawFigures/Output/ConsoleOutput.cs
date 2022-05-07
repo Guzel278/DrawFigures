@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DrawFigures
 {
-    public class COutput : Output
+    public class ConsoleOutput : Output
     {
         public override void Write(char[,] f)
         {

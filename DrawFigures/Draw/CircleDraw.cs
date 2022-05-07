@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DrawFigures
 {
-    internal class CDraw : IDraw
+    internal class CircleDraw : IDraw
     {
         int i, j;
         char[,] f;

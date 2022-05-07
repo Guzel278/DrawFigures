@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DrawFigures
 {
-    internal class FOutput : Output
+    internal class FileOutput : Output
     {
         public override void Write(char[,] f)
         {
