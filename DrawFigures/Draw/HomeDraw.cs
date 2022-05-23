@@ -17,14 +17,16 @@ namespace DrawFigures
         public void Create()
         {
             int k = f.GetLength(0);
+            int l = k / 2;
             //roof
-            for (int i = k / 2 - 1; i >= 0; i--)
+            for (int i = 0; i >= l; i++)
             {
-
-                for (int j = 0; j <= i; j++)
+                for (int j = l - i * (k/i); j < l + i * k/i; j++)
                     f[i, j] = '*';
-                for (int j = k; j < i; j++)
-                    f[i, j] = '@';
+                //for (int j = 0; j <= i; j++)
+                //    f[i, j] = '*';
+                //for (int j = k; j < i; j++)
+                //    f[i, j] = '@';
 
                 //for (int j = 0; j <= k - 1; j++)
                 //    f[i, j] = '@';
@@ -38,6 +40,7 @@ namespace DrawFigures
 
             }
 
+
             for (int i = k/2; i < k; i++)
             {
                 for (int j = 0; j < k ; j++)
@@ -46,5 +49,6 @@ namespace DrawFigures
                 }
             }       
         }
+      
     }
 }
